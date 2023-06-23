@@ -11,6 +11,7 @@ header{
   background-repeat: no-repeat;
 }
 
+/* contents */
 header .content{
   width: 100%;
   height: 100vh;
@@ -18,6 +19,7 @@ header .content{
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding: 0 15px;
 }
 header .content h1{
   color: var(--bs-light);
@@ -30,12 +32,16 @@ header .content p{
   padding-top: 20px;
 }
 
+/* link buttons */
 header .content .content-links{
   padding-top: 20px;
 }
 header .content .content-links a{
   margin-right: 20px;
+  border-radius: 2px;
+  padding: 10px 20px;
 }
+
 
 /*=========================== main =========================*/
 main{
@@ -45,11 +51,6 @@ main{
 }
 
 /*=========================== about =========================*/
-.about{
-  width: 100%;
-  height: auto;
-}
-
 /* logo */
 .about .logo{
   width: 400px;
@@ -72,8 +73,135 @@ main{
   width: 700px;
   max-width: 100%;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
-/*=========================== header =========================*/
+/*=========================== video =========================*/
+/* video content */
+.video-section .video-content .image{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+.video-content .image img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-section .video-content span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.video-section .video-content:hover span{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+
+/*=========================== legue images =========================*/
+/* images */
+.legue-img .content{
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.content img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* content overlay */
+.content .content-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+.content-overlay a{
+  color: var(--bs-light);
+  font-size: 40px;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: 0.5s ease;
+}
+
+/*=========================== teams =========================*/
+.teams .container{
+  position: relative;
+}
+.teams .table-content{
+  height: 600px;
+  overflow: hidden;
+}
+
+.teams .loading-screen.show{
+  display: flex;
+}
+.teams .loading-screen{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 1);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loading-screen .spinner-border{
+  width: 50px;
+  height: 50px;
+}
+
+.teams .see-more{
+  border-radius: 2px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.teams .table-content img{
+  width: 80px;
+  height: auto;
+}
+
+
 /*=========================== header =========================*/
 /*=========================== header =========================*/
