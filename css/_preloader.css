@@ -1,0 +1,25 @@
+/* desgins for preloader */
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bs-body-bg);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.preloader .spinner-grow{
+  width: 60px;
+  height: 60px;
+}
+
+/* remove preloader class */
+.preloader.remove{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
