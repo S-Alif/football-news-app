@@ -20,5 +20,12 @@ body{
   width: 100%;
   height: auto;
   display: block;
-  padding: 100px 0;
+  padding: 70px 0;
+}
+
+.section-title{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
