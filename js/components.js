@@ -24,3 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+// removing preloader
+window.onload = () => {
+  let preloader = document.querySelector('.preloader')
+  setTimeout(() => {
+    preloader.classList.add('remove')
+  }, 3500)
+}
+
+// see more button for tables
+document.querySelectorAll('.see-more').forEach(e => {
+  e.addEventListener('click', () => {
+    let loader = document.querySelector('.loading-screen')
+    let element = e.previousElementSibling
+    loader.classList.add('show')
+    e.classList.add('d-none')
+    setTimeout(() => {
+      loader.classList.remove('show')
+      element.style.height = "auto"
+    }, 3000)
+  })
+})
