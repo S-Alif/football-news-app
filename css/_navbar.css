@@ -1,15 +1,26 @@
 /* navbar designs */
+
+/*=========================== for desktop =========================*/
 .navbar{
   width: 100%;
   background: transparent;
   height: 70px;
   position: absolute;
+  z-index: 99;
 }
 
 /* logo color */
 .navbar .navbar-brand{
   color: var(--bs-light);
   font-weight: 800;
+}
+
+/* navbar toggler */
+.navbar .navbar-toggler,
+.navbar .btn-close{
+  border: 0;
+  outline: none;
+  box-shadow: none;
 }
 
 /* nav items */
@@ -21,6 +32,9 @@
 .navbar .nav-item .nav-link{
   color: var(--bs-light);
   font-weight: 500;
+}
+.navbar .nav-item .nav-link span{
+  padding-right: 5px;
 }
 .nav-item .nav-link::before{
   position: absolute;
@@ -61,4 +75,10 @@
 }
 .navbar.scroll-up .nav-item .nav-link::before{
   background-color: var(--bs-dark);
+}
+
+
+/*=========================== for mobile =========================*/
+.navbar .offcanvas{
+  height: 100vh;
 }
