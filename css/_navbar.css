@@ -82,3 +82,19 @@
 .navbar .offcanvas{
   height: 100vh;
 }
+
+/*=========================== for darkmode =========================*/
+[data-bs-theme=dark]{
+  .navbar.scroll-up .navbar-brand {
+    color: var(--bs-light);
+  }
+  .navbar.scroll-up{
+    background-color: var(--bs-dark);
+  }
+  .navbar.scroll-up .nav-item .nav-link{
+    color: var(--bs-light);
+  }
+  .navbar.scroll-up .nav-item .nav-link::before{
+    background-color: var(--bs-light);
+  }
+}
