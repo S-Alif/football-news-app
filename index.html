@@ -63,7 +63,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#teams">
                 <span><i class="fa-solid fa-people-group"></i></span>
                 Teams
               </a>
@@ -82,7 +82,7 @@
     <div class="container">
       <div class="content">
         <h1 class="align-middle">UEFA Champions <br>Legue Stats</h1>
-        <p>See all the teams and players data of UEFA Champions League</p>
+        <p>See all the team stats of UEFA Champions League 2022-2023</p>
         <div class="content-links">
           <a href="#about" class="btn btn-success">About us</a>
           <a href="#team-table" class="btn btn-primary">See Team Table</a>
@@ -270,9 +270,9 @@
 
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link" id="nav-teams-tab" data-bs-toggle="tab" data-bs-target="#nav-teams" type="button"
+                <button class="nav-link active" id="nav-teams-tab" data-bs-toggle="tab" data-bs-target="#nav-teams" type="button"
                   role="tab" aria-controls="nav-teams" aria-selected="false">Teams</button>
-                <button class="nav-link active" id="nav-groups-tab" data-bs-toggle="tab" data-bs-target="#nav-groups" type="button"
+                <button class="nav-link" id="nav-groups-tab" data-bs-toggle="tab" data-bs-target="#nav-groups" type="button"
                   role="tab" aria-controls="nav-groups" aria-selected="true">Groups</button>
               </div>
             </nav>
@@ -285,11 +285,11 @@
             </div>
 
             <div class="tab-content text-center" id="nav-tabContent">
-              <div class="tab-pane fade" id="nav-teams" role="tabpanel" aria-labelledby="nav-teams-tab" tabindex="0">
+              <div class="tab-pane fade show active" id="nav-teams" role="tabpanel" aria-labelledby="nav-teams-tab" tabindex="0">
 
                 <!-- legue table -->
-                <div class="table-content text-start">
-                  <div class="table-responsive mt-5">
+                <div class="table-content text-start mt-5">
+                  <div class="table-responsive">
                     <table class="table table-striped table-bordered league-table">
                       <thead>
                         <tr>
@@ -438,12 +438,12 @@
 
               </div>
               
-              <div class="tab-pane fade show active" id="nav-groups" role="tabpanel" aria-labelledby="nav-groups-tab" tabindex="0">
+              <div class="tab-pane fade" id="nav-groups" role="tabpanel" aria-labelledby="nav-groups-tab" tabindex="0">
 
                 <!-- groups tables -->
                 <div class="table-content text-start">
 
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="a">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -461,7 +461,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/SSC_Neapel.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Napoli</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#1">Napoli</td>
                           <td>6</td>
                           <td>5</td>
                           <td>0</td>
@@ -469,7 +469,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Liverpool_FC.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Liverpool</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#2">Liverpool</td>
                           <td>6</td>
                           <td>5</td>
                           <td>0</td>
@@ -477,7 +477,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Ajax_Amsterdam.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Ajax</td>
+                          <td data-bs-toggle="modal" data-bs-target="#3">Ajax</td>
                           <td>6</td>
                           <td>2</td>
                           <td>0</td>
@@ -485,7 +485,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Rangers_FC.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Rangers</td>
+                          <td data-bs-toggle="modal" data-bs-target="#4">Rangers</td>
                           <td>6</td>
                           <td>0</td>
                           <td>0</td>
@@ -494,7 +494,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="b">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -512,7 +512,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/FC_Porto.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Porto</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#5">Porto</td>
                           <td>6</td>
                           <td>4</td>
                           <td>0</td>
@@ -520,7 +520,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Club_Brugge_KV_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Club Brugge</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#6">Club Brugge</td>
                           <td>6</td>
                           <td>3</td>
                           <td>2</td>
@@ -528,7 +528,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Ajax_Amsterdam.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Leverkusen</td>
+                          <td data-bs-toggle="modal" data-bs-target="#7">Leverkusen</td>
                           <td>6</td>
                           <td>1</td>
                           <td>2</td>
@@ -536,7 +536,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Rangers_FC.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Atlético</td>
+                          <td data-bs-toggle="modal" data-bs-target="#8">Atlético</td>
                           <td>6</td>
                           <td>1</td>
                           <td>2</td>
@@ -545,7 +545,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="c">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -563,7 +563,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/FC_Bayern_München_logo_(2017).svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Bayern</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#9">Bayern</td>
                           <td>6</td>
                           <td>6</td>
                           <td>0</td>
@@ -571,7 +571,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/FC_Internazionale_Milano_2021.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Inter</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#10">Inter</td>
                           <td>6</td>
                           <td>3</td>
                           <td>1</td>
@@ -579,7 +579,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/FC_Barcelona_(crest).svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Barcelona</td>
+                          <td data-bs-toggle="modal" data-bs-target="#11">Barcelona</td>
                           <td>6</td>
                           <td>6</td>
                           <td>1</td>
@@ -587,7 +587,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Viktoria_Plzen_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Plzeň</td>
+                          <td data-bs-toggle="modal" data-bs-target="#12">Plzeň</td>
                           <td>6</td>
                           <td>0</td>
                           <td>0</td>
@@ -596,7 +596,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="d">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -614,7 +614,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/Tottenham_Hotspur.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Tottenham</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#13">Tottenham</td>
                           <td>6</td>
                           <td>3</td>
                           <td>2</td>
@@ -622,7 +622,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/270px-Eintracht_Frankfurt_Logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Frankfurt</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#14">Frankfurt</td>
                           <td>6</td>
                           <td>3</td>
                           <td>1</td>
@@ -630,7 +630,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Sporting_Clube_de_Portugal_(Logo).svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Sporting CP</td>
+                          <td data-bs-toggle="modal" data-bs-target="#15">Sporting CP</td>
                           <td>6</td>
                           <td>2</td>
                           <td>1</td>
@@ -638,7 +638,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Olympique_Marseille_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Marseille</td>
+                          <td data-bs-toggle="modal" data-bs-target="#16">Marseille</td>
                           <td>6</td>
                           <td>2</td>
                           <td>0</td>
@@ -647,7 +647,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="e">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -665,7 +665,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/Chelsea_FC.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Chelsea</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#17">Chelsea</td>
                           <td>6</td>
                           <td>4</td>
                           <td>1</td>
@@ -673,7 +673,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Logo_of_AC_Milan.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Milan</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#18">Milan</td>
                           <td>6</td>
                           <td>3</td>
                           <td>1</td>
@@ -681,7 +681,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/FC_Red_Bull_Salzburg_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Salzburg</td>
+                          <td data-bs-toggle="modal" data-bs-target="#19">Salzburg</td>
                           <td>6</td>
                           <td>1</td>
                           <td>3</td>
@@ -689,7 +689,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/GNK_Dinamo_Zagreb_badge_in_2019_(2).png" alt="" class="img-thumbnail"></td>
-                          <td>Dinamo Zagreb</td>
+                          <td data-bs-toggle="modal" data-bs-target="#20">Dinamo Zagreb</td>
                           <td>6</td>
                           <td>1</td>
                           <td>1</td>
@@ -698,7 +698,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="f">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -716,7 +716,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/Real_Madrid_CF.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Real Madrid</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#21">Real Madrid</td>
                           <td>6</td>
                           <td>4</td>
                           <td>1</td>
@@ -724,7 +724,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/RB_Leipzig_2014_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Leipzig</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#22">Leipzig</td>
                           <td>6</td>
                           <td>4</td>
                           <td>0</td>
@@ -732,7 +732,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/FC_Shakhtar_Donetsk.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Shakhtar Donetsk</td>
+                          <td data-bs-toggle="modal" data-bs-target="#23">Shakhtar Donetsk</td>
                           <td>6</td>
                           <td>1</td>
                           <td>3</td>
@@ -740,7 +740,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Celtic_FC.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Celtic</td>
+                          <td data-bs-toggle="modal" data-bs-target="#24">Celtic</td>
                           <td>6</td>
                           <td>0</td>
                           <td>2</td>
@@ -749,7 +749,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="g">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -767,7 +767,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/Manchester_City_FC_badge.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Man City</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#25">Man City</td>
                           <td>6</td>
                           <td>4</td>
                           <td>2</td>
@@ -775,7 +775,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Borussia_Dortmund_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Dortmund</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#26">Dortmund</td>
                           <td>6</td>
                           <td>2</td>
                           <td>3</td>
@@ -783,7 +783,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Sevilla_FC_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Sevilla</td>
+                          <td data-bs-toggle="modal" data-bs-target="#27">Sevilla</td>
                           <td>6</td>
                           <td>1</td>
                           <td>2</td>
@@ -791,7 +791,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/FC_Copenhagen_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Copenhagen</td>
+                          <td data-bs-toggle="modal" data-bs-target="#28">Copenhagen</td>
                           <td>6</td>
                           <td>0</td>
                           <td>3</td>
@@ -800,7 +800,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="table-responsive">
+                  <div class="table-responsive" id="h">
                     <table class="table table-bordered table-striped mt-5">
                       <thead>
                         <tr>
@@ -818,7 +818,7 @@
                       <tbody>
                         <tr>
                           <td><img src="img/team-logo/SL_Benfica_logo.svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Benfica</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#29">Benfica</td>
                           <td>6</td>
                           <td>4</td>
                           <td>2</td>
@@ -826,7 +826,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Paris_Saint-Germain_F.C..svg.png" alt="" class="img-thumbnail"></td>
-                          <td class="text-success fw-bolder">Paris</td>
+                          <td class="text-success fw-bolder" data-bs-toggle="modal" data-bs-target="#30">Paris</td>
                           <td>6</td>
                           <td>4</td>
                           <td>2</td>
@@ -834,7 +834,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Juventus_FC_2017_icon_(black).svg.png" alt="" class="img-thumbnail"></td>
-                          <td>Juventus</td>
+                          <td data-bs-toggle="modal" data-bs-target="#31">Juventus</td>
                           <td>6</td>
                           <td>1</td>
                           <td>0</td>
@@ -842,7 +842,7 @@
                         </tr>
                         <tr>
                           <td><img src="img/team-logo/Maccabi_Haifa_FC_Logo_2020.png" alt="" class="img-thumbnail"></td>
-                          <td>M. Haifa</td>
+                          <td data-bs-toggle="modal" data-bs-target="#32">M. Haifa</td>
                           <td>6</td>
                           <td>1</td>
                           <td>0</td>
@@ -855,13 +855,930 @@
                   
                 </div>
 
-                <button type="button" class="btn btn-primary text-capitalize mt-5 see-more">see more</button>
+                <nav aria-label="Page navigation example" class="mt-5">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#a">1</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#b">2</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#c">3</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#d">4</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#e">5</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#f">6</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#g">7</a></li>
+                    <li class="page-item"><a class="page-link text-success fw-bolder" href="#h">8</a></li>
+                  </ul>
+                </nav>
 
               </div>
             </div>
 
           </div>
         </div>
+      </div>
+
+      <!-- team member data -->
+      <div class="team-member-data">
+
+        <div class="modal fade" id="1" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Napoli</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Alex Meret</li>
+                  <li class="list-group-item">Claudio Turi</li>
+                  <li class="list-group-item">Hubert Idasiak</li>
+                  <li class="list-group-item">Valerio Boffelli</li>
+                  <li class="list-group-item">Pierluigi Gollini</li>
+                  <li class="list-group-item">Minjae Kim</li>
+                  <li class="list-group-item">Juan Jesus</li>
+                  <li class="list-group-item">Mário Rui</li>
+                  <li class="list-group-item">Amir Rrahmani</li>
+                  <li class="list-group-item">Mathías Olivera</li>
+                  <li class="list-group-item">Bartosz Bereszyński</li>
+                  <li class="list-group-item">Giovanni Di Lorenzo</li>
+                  <li class="list-group-item">Benedetto Barba</li>
+                  <li class="list-group-item">Leo Østigård</li>
+                  <li class="list-group-item">Matteo Marchisano</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="2" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Liverpool</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Alisson Becker</li>
+                  <li class="list-group-item">Adrián</li>
+                  <li class="list-group-item">Caoimhin Kelleher</li>
+                  <li class="list-group-item">Joe Gomez</li>
+                  <li class="list-group-item">Virgil van Dijk</li>
+                  <li class="list-group-item">Kostas Tsimikas</li>
+                  <li class="list-group-item">Andrew Robertson</li>
+                  <li class="list-group-item">Joël Matip</li>
+                  <li class="list-group-item">Trent Alexander-Arnold</li>
+                  <li class="list-group-item">Fabinho</li>
+                  <li class="list-group-item">Thiago Alcántara</li>
+                  <li class="list-group-item">Mohamed Salah</li>
+                  <li class="list-group-item">Darwin Núñez</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="3" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="4" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="5" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="6" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="7" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="8" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="9" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="10" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="11" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="12" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="13" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="14" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="15" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="16" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="17" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Napoli</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Alex Meret</li>
+                  <li class="list-group-item">Claudio Turi</li>
+                  <li class="list-group-item">Hubert Idasiak</li>
+                  <li class="list-group-item">Valerio Boffelli</li>
+                  <li class="list-group-item">Pierluigi Gollini</li>
+                  <li class="list-group-item">Minjae Kim</li>
+                  <li class="list-group-item">Juan Jesus</li>
+                  <li class="list-group-item">Mário Rui</li>
+                  <li class="list-group-item">Amir Rrahmani</li>
+                  <li class="list-group-item">Mathías Olivera</li>
+                  <li class="list-group-item">Bartosz Bereszyński</li>
+                  <li class="list-group-item">Giovanni Di Lorenzo</li>
+                  <li class="list-group-item">Benedetto Barba</li>
+                  <li class="list-group-item">Leo Østigård</li>
+                  <li class="list-group-item">Matteo Marchisano</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="18" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Liverpool</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Alisson Becker</li>
+                  <li class="list-group-item">Adrián</li>
+                  <li class="list-group-item">Caoimhin Kelleher</li>
+                  <li class="list-group-item">Joe Gomez</li>
+                  <li class="list-group-item">Virgil van Dijk</li>
+                  <li class="list-group-item">Kostas Tsimikas</li>
+                  <li class="list-group-item">Andrew Robertson</li>
+                  <li class="list-group-item">Joël Matip</li>
+                  <li class="list-group-item">Trent Alexander-Arnold</li>
+                  <li class="list-group-item">Fabinho</li>
+                  <li class="list-group-item">Thiago Alcántara</li>
+                  <li class="list-group-item">Mohamed Salah</li>
+                  <li class="list-group-item">Darwin Núñez</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="19" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="20" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="21" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="22" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="23" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="24" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="25" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="26" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="27" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="28" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="29" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="30" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="31" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="32" tabindex="-1" aria-labelledby="1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Maarten Stekelenburg</li>
+                  <li class="list-group-item">Remko Pasveer</li>
+                  <li class="list-group-item">Devyne Rensch</li>
+                  <li class="list-group-item">Daley Blind</li>
+                  <li class="list-group-item">Jorge Sánchez</li>
+                  <li class="list-group-item">Jurriën Timber</li>
+                  <li class="list-group-item">Edson Álvarez</li>
+                  <li class="list-group-item">Mohammed Kudus</li>
+                  <li class="list-group-item">Dušan Tadić</li>
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- teams -->
