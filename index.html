@@ -13,37 +13,64 @@
 </head>
 <body >
 
+  <!-- preloader -->
+  <div class="preloader d-none">
+    <div class="spinner-grow text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <!-- preloader -->
+
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
 
-      <a class="navbar-brand" href="#">Legue Stats</a>
+      <a class="navbar-brand" href="#">
+        <span><i class="fa-solid fa-futbol"></i></span>
+        Legue Stats
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Go to</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">
+                <span><i class="fa-solid fa-house"></i></span>
+                Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">
+                <span><i class="fa-solid fa-user"></i></span>
+                About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Legue Images</a>
+              <a class="nav-link" href="#legue-img">
+                <span><i class="fa-solid fa-images"></i></span>
+                Legue Images
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Teams</a>
+              <a class="nav-link" href="#">
+                <span><i class="fa-solid fa-people-group"></i></span>
+                Teams
+              </a>
             </li>
           </ul>
         </div>
+
       </div>
 
     </div>
@@ -58,7 +85,7 @@
         <p>See all the teams and players data of UEFA Champions League</p>
         <div class="content-links">
           <a href="#about" class="btn btn-success">About us</a>
-          <a href="#team-table" class="btn btn-info">See Team Table</a>
+          <a href="#team-table" class="btn btn-primary">See Team Table</a>
         </div>
       </div>
     </div>
@@ -72,20 +99,772 @@
     <!-- about section -->
     <section class="about custom-section" id="about">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="section-title text-uppercase text-danger text-center pb-5">about</h3>
+            
+            <div class="logo">
+              <img src="img/logo.png" alt="UEFA championship logo">
+            </div>
+            
+            <div class="text-content text-center pt-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, accusantium! Ab doloremque facilis eos sed hic esse
+                commodi laborum exercitationem veniam magni quibusdam ipsa, illum atque deleniti tempora laboriosam. Sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
 
-        <h3 class="section-title text-capitalize text-center fs-bolder pb-5">about</h3>
+    <!-- video section -->
+    <section class="video-section custom-section">
+      <div class="container">
+        <div class="row">
 
-        <div class="logo">
-          <img src="img/logo.png" alt="UEFA championship logo">
+          <div class="col-lg-4 col-md-6">
+            <div class="video-box pt-4">
+              <a data-fslightbox="video" href="https://www.youtube.com/watch?v=yRev6fHRMDQ" class="video-content">
+                <div class="image">
+                  <img src="img/thumbnail/vid-1.jpg" alt="">
+                  <span class="overlay text-light"><i class="fa-solid fa-play"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="video-box pt-4">
+              <a data-fslightbox="video" href="https://www.youtube.com/watch?v=QqxPau7fqwE" class="video-content">
+                <div class="image">
+                  <img src="img/thumbnail/vid-2.jpg" alt="">
+                  <span class="overlay text-light"><i class="fa-solid fa-play"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="video-box pt-4">
+              <a data-fslightbox="video" href="https://www.youtube.com/watch?v=90DbbceNqF0" class="video-content">
+                <div class="image">
+                  <img src="img/thumbnail/vid-3.jpg" alt="">
+                  <span class="overlay text-light"><i class="fa-solid fa-play"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- video section -->
+
+    <!-- legue images section -->
+    <section class="legue-img custom-section" id="legue-img">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-title text-uppercase text-danger pb-5">images</h3>
+          </div>
         </div>
 
-        <div class="text-content text-center pt-5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, accusantium! Ab doloremque facilis eos sed hic esse commodi laborum exercitationem veniam magni quibusdam ipsa, illum atque deleniti tempora laboriosam. Sed.</p>
+        <!-- images -->
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-1.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-1.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-2.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-2.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-3.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-3.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-4.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-4.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-5.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-5.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-6.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-6.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-7.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-7.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="img/legue-img/img-8.jpg" alt="">
+              <div class="content-overlay">
+                <a data-fslightbox="gallery" href="img/legue-img/img-8.jpg">
+                  <i class="fa-solid fa-maximize"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section>
-    <!-- about section -->
+    <!-- legue images section -->
+
+    <!-- teams -->
+    <section class="teams custom-section" id="teams">
+      <div class="container">
+
+        <!-- section title -->
+        <h3 class="section-title text-uppercase text-danger text-center pb-5">teams</h3>
+
+        <div class="row">
+          <div class="col-lg-12">
+
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link" id="nav-teams-tab" data-bs-toggle="tab" data-bs-target="#nav-teams" type="button"
+                  role="tab" aria-controls="nav-teams" aria-selected="false">Teams</button>
+                <button class="nav-link active" id="nav-groups-tab" data-bs-toggle="tab" data-bs-target="#nav-groups" type="button"
+                  role="tab" aria-controls="nav-groups" aria-selected="true">Groups</button>
+              </div>
+            </nav>
+
+            <!-- loading screen -->
+            <div class="loading-screen">
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+
+            <div class="tab-content text-center" id="nav-tabContent">
+              <div class="tab-pane fade" id="nav-teams" role="tabpanel" aria-labelledby="nav-teams-tab" tabindex="0">
+
+                <!-- legue table -->
+                <div class="table-content text-start">
+                  <div class="table-responsive mt-5">
+                    <table class="table table-striped table-bordered league-table">
+                      <thead>
+                        <tr>
+                          <th class="text-capitalize fs-6">Logo</th>
+                          <th class="text-capitalize fs-6">team name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td><img src="img/team-logo/Real_Madrid_CF.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Real Madrid</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/270px-Eintracht_Frankfurt_Logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Eintracht Frankfurt</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Manchester_City_FC_badge.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Manchester City F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Logo_of_AC_Milan.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>AC Milan</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Bayern_München_logo_(2017).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Bayern Munich</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Paris_Saint-Germain_F.C..svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Paris Saint-Germain F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Porto.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Porto</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Ajax_Amsterdam.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>AFC Ajax</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Liverpool_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Liverpool F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Chelsea_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Chelsea F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Barcelona_(crest).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Barcelona</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Juventus_FC_2017_icon_(black).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Juventus FC</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Atletico_Madrid_2017_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Atlético Madrid</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Sevilla_FC_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Sevilla FC</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/RB_Leipzig_2014_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>RB Leipzig</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Tottenham_Hotspur.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Tottenham Hotspur F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Borussia_Dortmund_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Borussia Dortmund</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Red_Bull_Salzburg_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Red Bull Salzburg</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Shakhtar_Donetsk.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Shakhtar Donetsk</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Internazionale_Milano_2021.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Inter Milan</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/SSC_Neapel.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>SSC Napoli</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/SL_Benfica_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>S.L. Benfica</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Sporting_Clube_de_Portugal_(Logo).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Sporting CP</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Bayer_04_Leverkusen_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Bayer 04 Leverkusen</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Rangers_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Rangers F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/GNK_Dinamo_Zagreb_badge_in_2019_(2).png" alt="" class="img-thumbnail"></td>
+                          <td>GNK Dinamo Zagreb</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Olympique_Marseille_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Olympique de Marseille</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Copenhagen_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>F.C. Copenhagen</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Club_Brugge_KV_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Club Brugge KV</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Celtic_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Celtic F.C.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Viktoria_Plzen_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>FC Viktoria Plzeň</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Maccabi_Haifa_FC_Logo_2020.png" alt="" class="img-thumbnail"></td>
+                          <td>Maccabi Haifa F.C.</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                </div>
+
+                <button type="button" class="btn btn-primary text-capitalize mt-5 see-more">see more</button>
+
+              </div>
+              
+              <div class="tab-pane fade show active" id="nav-groups" role="tabpanel" aria-labelledby="nav-groups-tab" tabindex="0">
+
+                <!-- groups tables -->
+                <div class="table-content text-start">
+
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group a</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/SSC_Neapel.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Napoli</td>
+                          <td>6</td>
+                          <td>5</td>
+                          <td>0</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Liverpool_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Liverpool</td>
+                          <td>6</td>
+                          <td>5</td>
+                          <td>0</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Ajax_Amsterdam.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Ajax</td>
+                          <td>6</td>
+                          <td>2</td>
+                          <td>0</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Rangers_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Rangers</td>
+                          <td>6</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group b</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Porto.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Porto</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>0</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Club_Brugge_KV_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Club Brugge</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>2</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Ajax_Amsterdam.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Leverkusen</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Rangers_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Atlético</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group c</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Bayern_München_logo_(2017).svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Bayern</td>
+                          <td>6</td>
+                          <td>6</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Internazionale_Milano_2021.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Inter</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Barcelona_(crest).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Barcelona</td>
+                          <td>6</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Viktoria_Plzen_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Plzeň</td>
+                          <td>6</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group d</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/Tottenham_Hotspur.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Tottenham</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>2</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/270px-Eintracht_Frankfurt_Logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Frankfurt</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Sporting_Clube_de_Portugal_(Logo).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Sporting CP</td>
+                          <td>6</td>
+                          <td>2</td>
+                          <td>1</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Olympique_Marseille_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Marseille</td>
+                          <td>6</td>
+                          <td>2</td>
+                          <td>0</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group e</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/Chelsea_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Chelsea</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Logo_of_AC_Milan.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Milan</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Red_Bull_Salzburg_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Salzburg</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>3</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/GNK_Dinamo_Zagreb_badge_in_2019_(2).png" alt="" class="img-thumbnail"></td>
+                          <td>Dinamo Zagreb</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group f</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/Real_Madrid_CF.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Real Madrid</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/RB_Leipzig_2014_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Leipzig</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>0</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Shakhtar_Donetsk.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Shakhtar Donetsk</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>3</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Celtic_FC.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Celtic</td>
+                          <td>6</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group g</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/Manchester_City_FC_badge.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Man City</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>2</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Borussia_Dortmund_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Dortmund</td>
+                          <td>6</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Sevilla_FC_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Sevilla</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/FC_Copenhagen_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Copenhagen</td>
+                          <td>6</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>3</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped mt-5">
+                      <thead>
+                        <tr>
+                          <th colspan="6" class="text-center text-capitalize">group h</th>
+                        </tr>
+                        <tr>
+                          <th class="text-capitalize">logo</th>
+                          <th class="text-capitalize">team name</th>
+                          <th class="text-capitalize">played</th>
+                          <th class="text-capitalize">won</th>
+                          <th class="text-capitalize">draw</th>
+                          <th class="text-capitalize">lost</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/team-logo/SL_Benfica_logo.svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Benfica</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>2</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Paris_Saint-Germain_F.C..svg.png" alt="" class="img-thumbnail"></td>
+                          <td class="text-success fw-bolder">Paris</td>
+                          <td>6</td>
+                          <td>4</td>
+                          <td>2</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Juventus_FC_2017_icon_(black).svg.png" alt="" class="img-thumbnail"></td>
+                          <td>Juventus</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/team-logo/Maccabi_Haifa_FC_Logo_2020.png" alt="" class="img-thumbnail"></td>
+                          <td>M. Haifa</td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  
+                </div>
+
+                <button type="button" class="btn btn-primary text-capitalize mt-5 see-more">see more</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- teams -->
 
   </main>
   <!-- main -->
@@ -96,6 +875,7 @@
 
 
   <!-- javascript -->
+  <script src="js/fslightbox.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="js/components.js"></script>
 </body>
