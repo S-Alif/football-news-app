@@ -41,7 +41,7 @@ document.querySelectorAll('.see-more').forEach(e => {
     e.classList.add('d-none')
     setTimeout(() => {
       loader.classList.remove('show')
-      element.style.height = "auto"
+      element.style.overflow = "scroll"
     }, 3000)
   })
 })
