@@ -1,7 +1,7 @@
 // get elements
 const mailSub = document.getElementById('mail-sub')
 const modeBtn = document.getElementById("mode-btn")
-
+const paginationBtn = document.querySelectorAll(".pagination .page-item .page-link")
 
 // navbar design change
 window.onscroll = () => {
@@ -116,4 +116,27 @@ modeBtn.addEventListener('click', (e) => {
     modeBtn.lastElementChild.classList.add('d-none')
     localStorage.setItem('mode', 'light')
   }
+})
+
+// pagination
+paginationBtn.forEach(e =>{
+  e.addEventListener('click', () => {
+    
+    let tables = document.querySelectorAll('.group-table .table-responsive')
+    let attr = e.getAttribute('href')
+    let linkId = attr.substr(1)
+    console.log(linkId)
+
+    tables.forEach(id => {
+      let tableId = id.getAttribute('id')
+      console.log(tableId)
+      if(tableId == linkId){
+        id.classList.remove('d-none')
+      }
+      else{
+        id.classList.add("d-none")
+      }
+    })
+
+  })
 })
