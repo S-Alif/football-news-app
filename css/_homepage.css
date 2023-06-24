@@ -5,41 +5,33 @@ header{
   width: 100%;
   height: 100vh;
   display: block;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/main-bg.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-/* contents */
-header .content{
+header .carousel-item{
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 0 15px;
+  position: relative;
 }
-header .content h1{
-  color: var(--bs-light);
-  font-size: 60px;
-  font-weight: 700;
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
-header .content p{
-  color: var(--bs-light);
-  font-weight: 500;
-  padding-top: 20px;
+.carousel-item .content,
+.carousel-item .content .container{
+  height: inherit;
 }
 
-/* link buttons */
-header .content .content-links{
-  padding-top: 20px;
-}
-header .content .content-links a{
-  margin-right: 20px;
-  border-radius: 2px;
-  padding: 10px 20px;
+.carousel-item .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -104,12 +96,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: 0.5s ease;
-}
-.video-section .video-content:hover span{
   opacity: 1;
-  transition: 0.5s ease;
 }
 
 
@@ -174,8 +161,11 @@ main{
   position: relative;
 }
 .teams .table-content{
-  height: 600px;
+  height: 530px;
   overflow: hidden;
+}
+.teams .table-content tbody tr td:nth-child(2){
+  cursor: pointer;
 }
 
 .teams .loading-screen.show{
@@ -209,5 +199,80 @@ main{
 }
 
 
-/*=========================== header =========================*/
-/*=========================== header =========================*/
+/*=========================== contact =========================*/
+.contact h5 a{
+  color: var(--bs-dark);
+}
+
+/* img content */
+.contact .img-content{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.contact .img-content img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* form content */
+.contact .form-content{
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.contact .form-content .form-group{
+  position: relative;
+}
+.form-group .invalid-tooltip{
+  right: 0;
+}
+
+
+[data-bs-theme=dark]{
+  .contact h5 a{
+    color: var(--bs-light);
+  }
+}
+
+.alert{
+  position: fixed;
+  right: 0;
+  top: 100px;
+  padding: 15px 70px;
+  z-index: 200;
+  transition: 0.5s ease;
+}
+.alert.remove{
+  right: -200%;
+}
+
+/*=========================== footer =========================*/
+footer .nav-items, 
+footer .media-icons{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/*=========================== responsive =========================*/
+@media screen and (max-width: 992px) {
+  .btn{
+    padding: 5px 12px!important;
+    font-size: 15px!important;
+  }
+  header .content h1{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .teams .table-content{
+    height: 510px;
+  }
+}
