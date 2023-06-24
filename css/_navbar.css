@@ -5,8 +5,9 @@
   width: 100%;
   background: transparent;
   height: 70px;
-  position: absolute;
+  position: fixed;
   z-index: 99;
+  transition: 0.3s;
 }
 
 /* logo color */
@@ -22,6 +23,10 @@
   outline: none;
   box-shadow: none;
 }
+.navbar .navbar-toggler i{
+  color: var(--bs-light);
+  font-size: 25px;
+}
 
 /* nav items */
 .navbar .nav-item{
@@ -32,6 +37,12 @@
 .navbar .nav-item .nav-link{
   color: var(--bs-light);
   font-weight: 500;
+}
+.navbar .nav-item button{
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
 }
 .navbar .nav-item .nav-link span{
   padding-right: 5px;
@@ -56,18 +67,16 @@
 
 
 /* navbar on scroll up */
-.scroll-down{
-  transform:translateY(-100%);
-  transition: all 0.3s ease-in-out;
-}
 .navbar.scroll-up{
   background-color: var(--bs-light);
-  position: fixed;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform:translateY(0);
   transition: all 0.3s ease-in-out;
 }
 .navbar.scroll-up .navbar-brand{
+  color: var(--bs-dark);
+}
+.navbar.scroll-up .navbar-toggler i {
   color: var(--bs-dark);
 }
 .navbar.scroll-up .nav-item .nav-link{
@@ -91,10 +100,21 @@
   .navbar.scroll-up{
     background-color: var(--bs-dark);
   }
+  .navbar.scroll-up .navbar-toggler i {
+    color: var(--bs-light);
+  }
   .navbar.scroll-up .nav-item .nav-link{
     color: var(--bs-light);
   }
   .navbar.scroll-up .nav-item .nav-link::before{
     background-color: var(--bs-light);
+  }
+}
+
+/*=========================== responsive =========================*/
+@media screen and (max-width: 992px) {
+  .navbar .nav-item .nav-link {
+    color: var(--bs-dark);
+    font-weight: 500;
   }
 }
