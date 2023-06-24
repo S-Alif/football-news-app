@@ -117,4 +117,9 @@
     color: var(--bs-dark);
     font-weight: 500;
   }
+  [data-bs-theme=dark]{
+    .navbar .nav-item .nav-link{
+      color: var(--bs-light);
+    }
+  }
 }
