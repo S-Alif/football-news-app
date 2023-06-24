@@ -164,7 +164,8 @@ main{
   height: 530px;
   overflow: hidden;
 }
-.teams .table-content tbody tr td:nth-child(2){
+
+.teams .group-table tbody tr td:nth-child(2){
   cursor: pointer;
 }
 
@@ -274,5 +275,10 @@ footer .media-icons{
 @media screen and (max-width: 500px) {
   .teams .table-content{
     height: 510px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .teams .table-content{
+    height: 390px;
   }
 }
