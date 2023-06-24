@@ -14,12 +14,15 @@
 <body >
 
   <!-- preloader -->
-  <div class="preloader d-none">
+  <div class="preloader">
     <div class="spinner-grow text-success" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
   <!-- preloader -->
+
+  <!-- alert for use -->
+  <div class="alert remove text-capitalize" role="alert"></div>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
@@ -32,7 +35,7 @@
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars"></i>
       </button>
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -45,7 +48,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="#home">
                 <span><i class="fa-solid fa-house"></i></span>
                 Home
               </a>
@@ -68,6 +71,18 @@
                 Teams
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <span><i class="fa-solid fa-phone"></i></span>
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link" id="mode-btn">
+                <span class=""><i class="fa-solid fa-sun"></i></span>
+                <span class="d-none"><i class="fa-solid fa-moon"></i></span>
+              </button>
+            </li>
           </ul>
         </div>
 
@@ -78,14 +93,46 @@
   <!-- navbar -->
 
   <!-- header -->
-  <header>
-    <div class="container">
-      <div class="content">
-        <h1 class="align-middle">UEFA Champions <br>Legue Stats</h1>
-        <p>See all the team stats of UEFA Champions League 2022-2023</p>
-        <div class="content-links">
-          <a href="#about" class="btn btn-success">About us</a>
-          <a href="#team-table" class="btn btn-primary">See Team Table</a>
+  <header id="home">
+    <div id="indicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#indicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#indicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="img/main-bg.jpg" alt="">
+          <div class="content">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+              <h1 class="text-capitalize text-light fw-bold text-center">UEFA champions league stats</h1>
+              <p class="fw-bold text-light text-center fs-5 pt-2">See all the teams and players data of <br> season 2022-2023</p>
+              <a href="#about" class="btn btn-success text-capitalize ps-4 pe-4">about us</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/main-bg-2.jpg" alt="">
+          <div class="content">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+              <h1 class="text-capitalize text-light fw-bold text-center">See Stunning match images</h1>
+              <p class="fw-bold text-light text-center fs-5 pt-2">High quality in game images</p>
+              <a href="#legue-img" class="btn btn-primary text-capitalize ps-4 pe-4">see images</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/main-bg-3.jpg" alt="">
+          <div class="content">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+              <h1 class="text-capitalize text-light fw-bold text-center">All the players data and groups</h1>
+              <p class="fw-bold text-light text-center fs-5 pt-2">see full match stats here with ease</p>
+              <a href="#teams" class="btn btn-danger text-capitalize ps-4 pe-4">see stats</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -120,6 +167,9 @@
     <!-- video section -->
     <section class="video-section custom-section">
       <div class="container">
+
+        <h3 class="section-title text-uppercase text-danger text-center pb-5">Videos</h3>
+
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
@@ -441,10 +491,10 @@
               <div class="tab-pane fade" id="nav-groups" role="tabpanel" aria-labelledby="nav-groups-tab" tabindex="0">
 
                 <!-- groups tables -->
-                <div class="table-content text-start">
+                <div class="table-content text-start mt-5">
 
                   <div class="table-responsive" id="a">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group a</th>
@@ -495,7 +545,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="b">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group b</th>
@@ -546,7 +596,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="c">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group c</th>
@@ -597,7 +647,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="d">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group d</th>
@@ -648,7 +698,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="e">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group e</th>
@@ -699,7 +749,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="f">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group f</th>
@@ -750,7 +800,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="g">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group g</th>
@@ -801,7 +851,7 @@
                     </table>
                   </div>
                   <div class="table-responsive" id="h">
-                    <table class="table table-bordered table-striped mt-5">
+                    <table class="table table-bordered table-striped mb-5">
                       <thead>
                         <tr>
                           <th colspan="6" class="text-center text-capitalize">group h</th>
@@ -968,12 +1018,16 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Rangers</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <h4 class="text-capitalize fs-4 mb-3">Player list</h4>
                 <ul class="list-group">
+                  <li class="list-group-item">Steven Berghuis</li>
+                  <li class="list-group-item">TSontje Hansen</li>
+                  <li class="list-group-item">Jaydon Banel</li>
+                  <li class="list-group-item">Giovanni</li>
                   <li class="list-group-item">Maarten Stekelenburg</li>
                   <li class="list-group-item">Remko Pasveer</li>
                   <li class="list-group-item">Devyne Rensch</li>
@@ -983,10 +1037,6 @@
                   <li class="list-group-item">Edson Álvarez</li>
                   <li class="list-group-item">Mohammed Kudus</li>
                   <li class="list-group-item">Dušan Tadić</li>
-                  <li class="list-group-item">Steven Berghuis</li>
-                  <li class="list-group-item">TSontje Hansen</li>
-                  <li class="list-group-item">Jaydon Banel</li>
-                  <li class="list-group-item">Giovanni</li>
                 </ul>
               </div>
             </div>
@@ -996,7 +1046,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Porto</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1024,7 +1074,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Club Brugge</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1052,7 +1102,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">LeverKusen</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1080,7 +1130,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Atlético</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1108,7 +1158,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Bayern</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1136,7 +1186,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Inter</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1164,7 +1214,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Barcelona</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1192,7 +1242,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Plzen</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1220,7 +1270,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Tottenham</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1248,7 +1298,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Frankfurt</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1276,7 +1326,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Sporting CP</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1304,7 +1354,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Marseille</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1332,7 +1382,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Napoli</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Chelsea</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1362,7 +1412,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Liverpool</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Milan</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1390,7 +1440,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Salzburg</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1418,7 +1468,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Dinamo Zagreb</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1446,7 +1496,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Real Madrid</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1474,7 +1524,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Leipzig</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1502,7 +1552,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Shakhtar Donetsk</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1530,7 +1580,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Celtic</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1558,7 +1608,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Man City</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1586,7 +1636,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Dortmund</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1614,7 +1664,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Sevilla</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1642,7 +1692,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Copenhagen</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1670,7 +1720,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Benfica</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1698,7 +1748,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Paris</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1726,7 +1776,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Juventus</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1754,7 +1804,7 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">Ajax</h1>
+                <h1 class="modal-title fs-3 fw-bolder" id="exampleModalLabel">M. Haifa</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -1783,11 +1833,119 @@
     </section>
     <!-- teams -->
 
+    <!-- contact -->
+    <section class="contact custom-section" id="contact">
+      <div class="container">
+
+        <h3 class="section-title text-uppercase text-center text-danger pb-5 mb-5">contact us</h3>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12">
+            <div class="content img-content pb-3 pb-lg-0 m-auto">
+              <img src="img/contact.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="content pt-md-0 pt-4 ps-lg-5">
+
+              <h4 class="text-capitalize text-decoration-underline fw-bolder pb-3 pt-xs-4 text-danger">our info</h4>
+
+              <h5 class="pb-3 fs-5">
+                <span class="pe-2"><i class="fa-solid fa-headset"></i></span>
+                <a href="tel:+000-111-000" class="text-decoration-none" data-bs-theme="light">+000-111-000</a>
+              </h5>
+              <h5 class="pb-3 fs-5">
+                <span class="pe-2"><i class="fa-solid fa-location-dot"></i></span>
+                <a href="" class="text-decoration-none" data-bs-theme="light">Bangladesh, Chittagong</a>
+              </h5>
+              <h5 class="pb-3 fs-5">
+                <span class="pe-2"><i class="fa-regular fa-envelope"></i></span>
+                <a href="mailto:amail@gmail.com" class="text-decoration-none" data-bs-theme="light">amail@gmail.com</a>
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="content form-content pt-md-0 pt-4">
+              <h3 class="section-title text-uppercase text-danger text-center pb-5 mb-2 pt-5">send a message</h3>
+
+              <form action="" class="needs-validation" method="post" novalidate>
+                <div class="form-group">
+                  <label for="name" class="text-capitalize pb-2">name</label>
+                  <input type="text" name="name" id="name" class="form-control mb-4" placeholder="Your Name" minlength="4" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="text-capitalize pb-2">email</label>
+                  <input type="email" name="email" id="email" class="form-control mb-4" placeholder="Your Email" minlength="12" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="text-capitalize pb-2">message</label>
+                  <textarea name="message" id="message" cols="30" rows="5" class="form-control" minlength="30" placeholder="Your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success text-capitalize mt-4 w-100 p-2" id="mail-sub">submit</button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- contact -->
+
   </main>
   <!-- main -->
 
 
   <!-- footer -->
+  <footer class="pt-5 pb-5 bg-black">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="content-box">
+
+            <div class="logo text-center text-lg-start pb-3">
+              <a href="#" class="text-decoration-none fw-bolder fs-5 text-light">
+                <span><i class="fa-solid fa-futbol"></i></span>
+                Legue Stats
+              </a>
+            </div>
+            <ul class="nav-items list-style-none p-0 d-flex text-center text-lg-start flex-column flex-lg-row mb-0">
+              <li class="nav-links pb-2 pb-lg-0 pe-sm-0 pe-md-3"><a href="#home" class="text-capitalize text-light text-decoration-none">home</a></li>
+              <li class="nav-links pb-2 pb-lg-0 pe-sm-0 pe-md-3"><a href="#about" class="text-capitalize text-light text-decoration-none">about</a></li>
+              <li class="nav-links pb-2 pb-lg-0 pe-sm-0 pe-md-3"><a href="#legue-img" class="text-capitalize text-light text-decoration-none">league images</a></li>
+              <li class="nav-links pb-2 pb-lg-0 pe-sm-0 pe-md-3"><a href="#teams" class="text-capitalize text-light text-decoration-none">teams</a></li>
+              <li class="nav-links pb-2 pb-lg-0 pe-sm-0 pe-md-3"><a href="#contact" class="text-capitalize text-light text-decoration-none">contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-box pt-lg-0 pt-5">
+            <ul class="media-icons p-0 d-flex text-center text-lg-end flex-lg-row justify-content-lg-end justify-content-center">
+              <li class=""><a href="" class="text-light"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+              <li class="ps-3"><a href="" class="text-light"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+              <li class="ps-3"><a href="" class="text-light"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+            </ul>
+
+            <h6 class="text-secondary text-capitalize mt-3 text-center text-lg-end">
+              <span><i class="fa-regular fa-copyright"></i></span>
+              copyright 2021 || all rights reserved
+            </h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
   <!-- footer -->
 
 
