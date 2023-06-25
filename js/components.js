@@ -1,3 +1,5 @@
+// for the components used in the theme ex pagination
+
 // get elements
 const mailSub = document.getElementById('mail-sub')
 const modeBtn = document.getElementById("mode-btn")
