@@ -3,6 +3,7 @@
 ### Built with
 - [Bootstrap 5.3](https://getbootstrap.com/)
 - Javascript Plugins([FS lightbox](https://fslightbox.com/javascript))
+  - FS lightbox is used for lightbox gallery in images and video sections
 - Basic Javascript
 
 ### links
